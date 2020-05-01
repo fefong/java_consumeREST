@@ -52,7 +52,7 @@ To enable Output (Response Body) setting: ``true``
 conn.setDoInput(true);
 ```
 
-When a request requires a body it is necessary to use OutputStreamWriter to send the data.
+When a request requires a body (request Body) it is necessary to use OutputStreamWriter to send the data.
 
 ```java
 OutputStreamWriter output = new OutputStreamWriter(conn.getOutputStream());
@@ -83,6 +83,10 @@ while ((line = br.readLine()) != null) {
 	responseBody.append("\t" + line + "\n");
 }
 ```
+
+## Code snippet 
+
+[Code](src/Main.java);
 
 ## Exceptions
 
