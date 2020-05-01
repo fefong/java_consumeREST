@@ -84,6 +84,12 @@ while ((line = br.readLine()) != null) {
 }
 ```
 
+When finished, just disconnect the connection.
+
+```java
+conn.disconnect();
+```
+
 ## Code snippet 
 
 [Code](src/Main.java);
