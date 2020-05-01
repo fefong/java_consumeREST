@@ -24,7 +24,13 @@ URL url = new URL(String);
 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 ```
 
-Sets the general request property. If a property with the key already exists, overwrite its value with the new value. 
+Sets the general request property. If a property with the key already exists, overwrite its value with the new value.
+ 
+RequestMethod:
+* GET;
+* POST;
+* PUT;
+* DELETE;
 
 ```java
 conn.setRequestProperty("Accept", "application/json");
